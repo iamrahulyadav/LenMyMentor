@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_main"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/v_center"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_centerInParent="true" />
+
+    <LinearLayout
+        android:id="@+id/llEnterOTP"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/v_center"
+        android:layout_marginTop="23dp"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="0.5" />
+
+        <EditText
+            android:id="@+id/otp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:background="@drawable/grey_border_box"
+            android:gravity="center"
+            android:hint="Enter Mobile Number"
+            android:inputType="number|phone"
+            android:padding="17dp"
+            android:maxLength="10"
+            android:textAppearance="?android:textAppearance" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="0.5" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llSendOtp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/llEnterOTP"
+        android:layout_marginBottom="21dp"
+        android:layout_marginTop="13dp"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="0.5" />
+
+        <Button
+
+            android:id="@+id/btn_sendOTP"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_weight="2"
+            android:background="@drawable/selector_btn_blue"
+            android:text="SUBMIT"
+            android:onClick="onOTPClick"
+            android:textAllCaps="false"
+            android:textColor="@color/white" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="0.5" />
+    </LinearLayout>
+
+
+</RelativeLayout>

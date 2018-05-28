@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.balysv.materialripple.MaterialRippleLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/card"
+    android:layout_marginTop="13dp">
+
+    <LinearLayout
+        android:id="@+id/lyt_parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="7dp"
+        android:clickable="true"
+        android:gravity="center_vertical"
+        android:minHeight="60dp"
+        android:orientation="vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <ImageView
+                android:id="@+id/image"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginLeft="5dp"
+                android:src="@drawable/unknown_avatar" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="2"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sample"
+                    android:textAppearance="?android:textAppearance"
+                    android:textStyle="normal" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_unreadcount"
+                android:paddingTop="5dp"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:background="@drawable/ic_incoming"
+                android:gravity="center"
+                android:paddingLeft="7dp"
+                android:paddingRight="7dp"
+                android:paddingBottom="7dp"
+                android:text="2"
+                android:layout_marginBottom="13dp"
+                android:textSize="10sp"
+                android:textColor="@color/chat_received_white"
+                android:visibility="invisible" />
+        </LinearLayout>
+<!--
+        <View
+            android:id="@+id/view_grey_divider"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginTop="7dp"
+            android:background="@color/grey_medium" />-->
+    </LinearLayout>
+
+
+</com.balysv.materialripple.MaterialRippleLayout>

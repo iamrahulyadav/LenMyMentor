@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_main"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/v_center"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_centerInParent="true" />
+
+    <LinearLayout
+        android:id="@+id/llEnterOTP"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/v_center"
+        android:layout_marginTop="23dp"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="0.5" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:text="Welcome to Mohan Overseas"
+            android:textAppearance="?android:textAppearance" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="0.5" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/llSignUpMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/llEnterOTP"
+        android:layout_marginTop="7dp"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="0.5" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:textColor="#555555"
+            android:text="Please sign in with mobile first"
+            android:textAppearance="?android:textAppearance" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="0.5" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/llSendOtp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/llSignUpMessage"
+        android:layout_marginBottom="21dp"
+        android:layout_marginTop="13dp"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="0.5" />
+
+        <Button
+
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_weight="2"
+            android:background="@drawable/selector_btn_blue"
+            android:text="Sign in with mobile"
+            android:textAllCaps="false"
+            android:onClick="onSignupClick"
+            android:textColor="@color/white" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="0.5" />
+    </LinearLayout>
+
+
+</RelativeLayout>

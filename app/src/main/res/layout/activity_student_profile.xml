@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="7dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/card"
+            android:orientation="horizontal"
+            android:padding="13dp">
+
+            <LinearLayout
+                android:id="@+id/ll_header_layer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/iv_userProfile"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="7dp"
+                    android:src="@drawable/unknown_avatar" />
+
+                <TextView
+                    android:id="@+id/name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="21dp"
+                    android:layout_toRightOf="@+id/image"
+                    android:text="Yashwant"
+                    android:textAppearance="?android:textAppearance"
+                    android:textColor="#333333" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center"
+                    android:onClick="onCallClick"
+                    android:orientation="horizontal"
+                    android:padding="7dp">
+
+                    <ImageButton
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_marginRight="7dp"
+                        android:background="@android:color/transparent"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/ic_phone" />
+
+                    <TextView
+                        android:id="@+id/tv_phone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="9757482927"
+                        android:textAppearance="?android:textAppearance"
+                        android:textColor="#333333" />
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ll_header_layer"
+                android:layout_centerVertical="true"
+                android:layout_margin="7dp"
+                android:text="talukdar.jit@gamil.com"
+                android:textAppearance="?android:textAppearanceSmall"
+                android:textColor="#333333" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/card"
+            android:padding="13dp">
+
+            <TextView
+                android:id="@+id/tv_lable_aboutMe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="7dp"
+                android:text="ABOUT "
+                android:textAppearance="?android:textAppearance"
+                android:textColor="#B4B4B4"
+                android:textStyle="bold" />
+
+
+
+            <TextView
+                android:id="@+id/tv_aboutMe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_lable_aboutMe"
+                android:padding="7dp"
+                android:text="About Student."
+                android:textAppearance="?android:textAppearanceSmall"
+                android:textColor="#333333" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/card"
+            android:orientation="vertical"
+            android:padding="13dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="7dp"
+                android:text="UNIVERSITY APPLICATIONS"
+                android:textColor="#B4B4B4"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="7dp"
+                android:visibility="visible"
+                android:text="Interested Colleges"
+                android:textColor="@color/chat_sent_blue" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerAppliedUniversities"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="7dp"
+                android:visibility="visible"
+                android:scrollbars="vertical" />
+            <TextView
+                android:layout_marginTop="7dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="7dp"
+                android:text="Suggested Colleges"
+                android:textColor="@color/chat_sent_blue" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerSuggestedUniversities"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="7dp"
+                android:scrollbars="vertical" />
+
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/card"
+            android:visibility="visible"
+            android:padding="13dp">
+
+            <TextView
+                android:id="@+id/tv_label_testScore"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="7dp"
+                android:text="TEST SCORES"
+                android:textAppearance="?android:textAppearance"
+                android:textColor="#B4B4B4"
+                android:textStyle="bold" />
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_label_testScore"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:padding="7dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:padding="7dp"
+                        android:textColor="#333333"
+                        android:text="GRE" />
+
+                    <TextView
+                        android:id="@+id/tv_greScore"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/light_blue_border_box"
+                        android:gravity="center"
+                        android:padding="7dp"
+                        android:text="NA"
+                        android:textColor="@color/chat_sent_blue" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="3dp"
+                    android:layout_height="match_parent"
+                    android:background="#F5F5F5" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:padding="7dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:padding="7dp"
+                        android:textColor="#333333"
+                        android:text="TOEFL/IELTS" />
+
+                    <TextView
+                        android:id="@+id/tv_toeflScore"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/light_blue_border_box"
+                        android:gravity="center"
+                        android:padding="7dp"
+                        android:text="NA"
+                        android:textColor="@color/chat_sent_blue" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/card"
+            android:padding="13dp">
+
+            <TextView
+                android:id="@+id/tv_label_uploadResume"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="7dp"
+                android:text="RESUME"
+                android:textAppearance="?android:textAppearance"
+                android:textColor="#B4B4B4"
+                android:textStyle="bold" />
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_label_uploadResume"
+                android:orientation="horizontal"
+                android:onClick="onDownloadResumeClick"
+                android:weightSum="1">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:padding="7dp">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/light_blue_border_box"
+                        android:orientation="horizontal"
+                        android:padding="7dp">
+
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:padding="3dp"
+                            android:scaleType="centerInside"
+                            android:src="@drawable/ic_downloads" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:padding="7dp"
+                            android:text="Download Resume"
+                            android:textColor="@color/chat_sent_blue" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>

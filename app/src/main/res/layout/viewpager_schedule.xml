@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/iv_header"
+        android:layout_width="match_parent"
+        android:layout_height="260dp"
+        android:background="#1273B0"
+        android:scaleType="centerInside"
+        android:src="@drawable/walkthrough_schedule" />
+
+
+
+    <TextView
+        android:id="@+id/tv_header"
+        android:paddingLeft="43dp"
+        android:paddingRight="43dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sed ud perspiciatis unde omis iste natus error sit"
+        android:layout_marginTop="13dp"
+        android:layout_marginLeft="7dp"
+        android:layout_marginRight="7dp"
+        android:layout_marginBottom="13dp"
+        android:textAppearance="?android:textAppearanceSmall"
+        android:layout_below="@+id/iv_header"
+        android:textColor="#1273B0"
+
+        android:gravity="center_horizontal"/>
+    <TextView
+        android:paddingLeft="43dp"
+        android:paddingRight="43dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nemo enim ipsam voluptatem quia volupstas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione"
+        android:layout_marginTop="7dp"
+        android:layout_marginLeft="7dp"
+        android:layout_marginRight="7dp"
+        android:layout_marginBottom="13dp"
+        android:textAppearance="?android:textAppearanceSmall"
+        android:layout_below="@+id/tv_header"
+        android:textColor="#959595"
+
+        android:gravity="center_horizontal"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="13dp"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:paddingLeft="13dp"
+            android:text="SKIP"
+            android:onClick="onSkipClicked"
+            android:textAppearance="?android:textAppearanceSmall"
+            android:textColor="#2980b9" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+
+            android:gravity="center_horizontal"
+
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="20dp"
+                android:src="@drawable/ic_pager_indicator" />
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="20dp"
+                android:src="@drawable/ic_pager_indicator" />
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="20dp"
+                android:src="@drawable/ic_pager_indicator_click" />
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="20dp"
+                android:src="@drawable/ic_pager_indicator" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:paddingRight="13dp"
+            android:text="NEXT"
+            android:onClick="jumpToNextPage"
+            android:textAppearance="?android:textAppearanceSmall"
+            android:textColor="#2980b9" />
+    </LinearLayout>
+
+
+</RelativeLayout>

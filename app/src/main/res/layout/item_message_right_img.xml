@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingBottom="5dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp">
+
+    <ImageView
+        android:id="@+id/ivUserChat"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_alignBottom="@+id/contentMessageChat"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:visibility="visible" />
+
+    <me.himanshusoni.chatmessageview.ChatMessageView
+        android:id="@+id/contentMessageChat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="25dp"
+        android:layout_marginRight="35dp"
+        android:layout_toLeftOf="@+id/ivUserChat"
+        android:layout_toStartOf="@+id/ivUserChat"
+        app:cmv_arrowGravity="end"
+        app:cmv_arrowPosition="right"
+        app:cmv_backgroundColor="@color/chat_sent_blue"
+        app:cmv_backgroundColorPressed="#FFBABABA"
+        app:cmv_contentPadding="2dp"
+        app:cmv_cornerRadius="3dp"
+        app:cmv_showArrow="false">
+
+        <ImageView
+            android:id="@+id/img_chat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:maxHeight="150dp"
+            android:maxWidth="150dp"
+            android:minHeight="100dp"
+            android:minWidth="100dp" />
+
+        <TextView
+            android:id="@+id/tvLocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/img_chat"
+            android:layout_marginTop="2dp"
+            android:text="Localização Enviada"
+            android:textColor="#fff"
+            android:textSize="10sp"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/timestamp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@id/img_chat"
+            android:layout_below="@id/img_chat"
+            android:padding="10dp"
+            android:text="22/06/2016"
+            android:textColor="@color/chat_received_white"
+            android:textSize="10sp" />
+
+    </me.himanshusoni.chatmessageview.ChatMessageView>
+
+
+</RelativeLayout>

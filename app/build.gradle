@@ -1,0 +1,65 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 26
+    defaultConfig {
+        applicationId "com.nucleustech.mymentor.admin"
+        minSdkVersion 15
+        targetSdkVersion 22
+        versionCode 11
+        versionName "1.3.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'com.android.support:appcompat-v7:26.1.0'
+    implementation 'com.android.support:design:26.1.0'
+    implementation 'com.android.support.constraint:constraint-layout:1.0.2'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.1'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
+
+    compile 'com.android.volley:volley:1.0.0'
+
+    compile files('libs/universal-image-loader-1.9.3.jar')
+
+    compile 'com.android.support:recyclerview-v7:26.1.0'
+
+    //IMAGE LOAD
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+
+    //CHAT UI
+    compile 'hani.momanii.supernova_emoji_library:supernova-emoji-library:0.0.2'
+    compile 'me.himanshusoni.chatmessageview:chat-message-view:1.0.3'
+    // AUTH
+    compile 'com.google.android.gms:play-services-auth:9.2.0'
+    compile 'com.google.firebase:firebase-auth:9.2.0'
+
+    //DATABASE FIREBASE,UI
+    compile 'com.google.firebase:firebase-database:9.2.0'
+    compile 'com.firebaseui:firebase-ui-database:0.4.1'
+
+    //STORAGE FIREBASE
+    compile 'com.google.firebase:firebase-storage:9.2.0'
+
+    compile 'com.balysv:material-ripple:1.0.2'
+
+    compile "com.github.stfalcon:smsverifycatcher:0.3.1"
+
+    //MESSAGING FIREBASE
+    compile 'com.google.firebase:firebase-messaging:9.2.0'
+
+    //FACEBOOK SDK
+    /*compile 'com.facebook.android:facebook-android-sdk:4.20.0'*/
+
+    compile 'org.greenrobot:eventbus:3.1.1'
+}
+apply plugin: 'com.google.gms.google-services'

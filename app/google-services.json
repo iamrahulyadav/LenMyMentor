@@ -1,0 +1,99 @@
+{
+  "project_info": {
+    "project_number": "856587074805",
+    "firebase_url": "https://mohanoverseas-a4244.firebaseio.com",
+    "project_id": "mohanoverseas-a4244",
+    "storage_bucket": "mohanoverseas-a4244.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:856587074805:android:02d212dfd6d42bb7",
+        "android_client_info": {
+          "package_name": "com.nucleustech.mohanoverseas.student"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "856587074805-vjervosi3ab6r2lti5bm2h6km6418p8c.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.nucleustech.mohanoverseas.student",
+            "certificate_hash": "06cb270606d5ec9717964ce678f8ed40d508c52d"
+          }
+        },
+        {
+          "client_id": "856587074805-5qi1di233klffv04mq4gfs0pili4b96h.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC_tZlIDoSHuKMTW77MdihonfmSjq9XnXE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "856587074805-5qi1di233klffv04mq4gfs0pili4b96h.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:856587074805:android:40a05b80b4715c2d",
+        "android_client_info": {
+          "package_name": "com.nucleustech.mymentor.admin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "856587074805-4qm2qco6cuto9r5fbosvrleicnrc8s3u.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.nucleustech.mymentor.admin",
+            "certificate_hash": "06cb270606d5ec9717964ce678f8ed40d508c52d"
+          }
+        },
+        {
+          "client_id": "856587074805-5qi1di233klffv04mq4gfs0pili4b96h.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC_tZlIDoSHuKMTW77MdihonfmSjq9XnXE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "856587074805-5qi1di233klffv04mq4gfs0pili4b96h.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

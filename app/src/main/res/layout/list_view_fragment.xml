@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp">
+
+    <!--  EditText for User Input -->
+    <EditText
+        android:id="@+id/search_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/search_bg"
+        android:drawableLeft="@drawable/ic_search"
+        android:drawablePadding="5dp"
+        android:gravity="center_vertical"
+        android:hint="Enter text to search student"
+        android:maxLines="1"
+        android:padding="8dp"
+        android:textColor="@android:color/black"
+        android:textColorHint="@android:color/darker_gray"
+        android:textAppearance="?android:textAppearance"/>
+
+    <ListView
+        android:id="@+id/list_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/search_text"
+        android:layout_marginTop="5dp" />
+
+
+</RelativeLayout>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:emojicon="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingBottom="5dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp">
+
+    <ImageView
+        android:id="@+id/ivUserChat"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_alignBottom="@+id/contentMessageChat"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:visibility="visible" />
+
+    <me.himanshusoni.chatmessageview.ChatMessageView
+        android:id="@+id/contentMessageChat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="25dp"
+
+        android:layout_marginRight="35dp"
+        android:layout_toLeftOf="@+id/ivUserChat"
+        android:layout_toStartOf="@+id/ivUserChat"
+        app:cmv_arrowGravity="end"
+        app:cmv_arrowPosition="right"
+        app:cmv_backgroundColor="@color/chat_sent_blue"
+        app:cmv_backgroundColorPressed="#FFBABABA"
+        app:cmv_contentPadding="2dp"
+        app:cmv_cornerRadius="3dp"
+        app:cmv_showArrow="false">
+
+        <hani.momanii.supernova_emoji_library.Helper.EmojiconTextView
+            android:id="@+id/txtMessage"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:paddingLeft="7dp"
+            android:text="Alessandr sdlsdklsd \n slkdlskdlks \nsdlkslkds dsdso"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textColor="#fff"
+            android:textIsSelectable="true"
+            emojicon:emojiconSize="28sp" />
+
+        <TextView
+            android:id="@+id/timestamp"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@id/txtMessage"
+            android:layout_below="@id/txtMessage"
+            android:gravity="right"
+            android:padding="2dp"
+            android:text="22/06/2016"
+            android:textAppearance="?android:textAppearanceSmall"
+            android:textColor="@color/chat_received_white"
+            android:textSize="10sp" />
+    </me.himanshusoni.chatmessageview.ChatMessageView>
+
+
+</RelativeLayout>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:emojicon="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="5dp">
+
+    <ImageView
+        android:id="@+id/ivUserChat"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_alignBottom="@+id/contentMessageChat"
+        android:visibility="visible" />
+
+    <me.himanshusoni.chatmessageview.ChatMessageView
+        android:id="@+id/contentMessageChat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_toEndOf="@+id/ivUserChat"
+        android:layout_alignParentTop="true"
+        app:cmv_arrowGravity="end"
+        android:layout_marginLeft="35dp"
+        android:paddingLeft="7dp"
+        app:cmv_arrowPosition="left"
+        app:cmv_backgroundColor="@color/chat_received_white"
+        app:cmv_backgroundColorPressed="#FFBABABA"
+        app:cmv_cornerRadius="3dp"
+        app:cmv_showArrow="false">
+
+        <hani.momanii.supernova_emoji_library.Helper.EmojiconTextView
+            android:id="@+id/txtMessage"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:text="Alessandr sdlsdklsd \n slkdlskdlks \nsdlkslkds dsdso"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textIsSelectable="true"
+            emojicon:emojiconSize="28sp" />
+
+        <TextView
+            android:id="@+id/timestamp"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtMessage"
+            android:gravity="right"
+            android:paddingLeft="3dp"
+            android:paddingTop="3dp"
+            android:text="22/06/2016"
+            android:textAppearance="?android:textAppearanceSmall"
+            android:textColor="@color/chat_grey"
+            android:textSize="10sp" />
+    </me.himanshusoni.chatmessageview.ChatMessageView>
+
+
+</RelativeLayout>

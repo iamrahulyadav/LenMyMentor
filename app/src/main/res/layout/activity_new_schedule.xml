@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="13dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/card"
+        android:padding="13dp">
+
+        <TextView
+            android:id="@+id/tv_lable_scheduleChat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="7dp"
+            android:text="SCHEDULE MEET"
+            android:textAppearance="?android:textAppearance"
+            android:textColor="#B4B4B4"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_toRightOf="@+id/tv_lable_scheduleChat"
+            android:gravity="right"
+            android:onClick="onRescheduleClick"
+            android:padding="7dp"
+            android:text="SCHEDULE"
+            android:textAppearance="?android:textAppearance"
+            android:textColor="@color/chat_sent_blue"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_scheduleChat_dateTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_lable_scheduleChat"
+            android:background="@drawable/grey_border_box"
+            android:gravity="center"
+
+            android:padding="13dp"
+            android:text="2/12/2017   10:41:00"
+            android:textAppearance="?android:textAppearanceSmall"
+            android:textColor="#333333" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/tv_scheduleChat_dateTime"
+            android:layout_marginTop="21dp"
+            android:gravity="right"
+            android:onClick="onCancelScheduleClick"
+            android:padding="7dp"
+            android:text="CANCEL"
+            android:textAppearance="?android:textAppearance"
+            android:textColor="#D0132B"
+            android:textStyle="bold"
+            android:visibility="invisible" />
+    </RelativeLayout>
+
+</LinearLayout>
